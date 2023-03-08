@@ -16,3 +16,5 @@ const authorSchema = new Schema({
         default: Date.now
     }
 });
+
+module.exports = model('Author', authorSchema);

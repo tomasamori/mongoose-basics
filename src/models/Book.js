@@ -26,3 +26,5 @@ const bookSchema = new Schema({
     	default: Date.now
     }
 });
+
+module.exports = model('Book', bookSchema);
