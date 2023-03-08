@@ -3,7 +3,10 @@ const { Schema, model } = require('mongoose');
 const authorSchema = new Schema({
     _id: Schema.Types.ObjectId,
     name: {
-        firstName: String,
+        firstName: {
+            type: String,
+            required: true
+        },
         lastName: String
     },
     biography: String,
